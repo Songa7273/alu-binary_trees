@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "binary_trees.h"
 
-static void print_t(binary_tree_t *tree, int space)
+static void print_t(const binary_tree_t *tree, int space)
 {
 	int i;
 
@@ -19,8 +19,7 @@ static void print_t(binary_tree_t *tree, int space)
 
 	print_t(tree->left, space);
 }
-
-void binary_tree_print(binary_tree_t *tree)
+void binary_tree_print(const binary_tree_t *tree)
 {
 	print_t(tree, 0);
 }
